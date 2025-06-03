@@ -1,0 +1,59 @@
+ body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #f9a5cb;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      background: rgb(220, 111, 111);
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .day-label, .date {
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .day-label {
+      background: #c0e2e6;
+      border-radius: 5px;
+    }
+
+    .date {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .date.event {
+      background: #4ece95;
+      color: #000000;
+    }
+
+    .event-dot {
+      position: absolute;
+      right: 5px;
+      height: 6px;
+      width: 6px;
+      background-color: #0a7643;
+      border-radius: 50%;
+    }
